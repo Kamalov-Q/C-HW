@@ -3,25 +3,21 @@
 #include<math.h>
 
 float square(float num) {
-
     float result = num *num;
     return result;
 
 }
 
 float cubic(float num) {
-
     float result = num * num *num;
     return result;
 }
 
 float calculate(float num1, float num2) {
-
     float result = num1 * num2;
     return result;
 
 }
-
 
 int main() {
     int choice;
@@ -31,7 +27,6 @@ int main() {
     printf("1.Find the square !\n");
     printf("2.Find the cub !\n");
     printf("3.Multiply 2 numbers !\n");
-
     printf("Which one do u choose : ");
     scanf("%d", &choice);
 
@@ -58,7 +53,6 @@ int main() {
         default:
             printf("Enter a proper choice (1-3)\n");
     }
-
-
+    
     return 0;
 }
