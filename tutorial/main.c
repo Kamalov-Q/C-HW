@@ -1,21 +1,18 @@
 #include<stdio.h>
 #include<string.h>
 #include<math.h>
+#include<unistd.h>
 
-void hello(char name[], int age); // function prototype
 
 int main() {
-   
-    char name[40] = "Spongebob";
-    int age = 30;
 
-    hello(name, age);
+    for (int i =10; i >= 0; i--){
+        sleep(1);
+        printf("%d\n", i);
+    }
+
+    printf("Happy New Year!\n");
+   
     
     return 0;
 }
-
-
-void hello(char name[], int age){
-    printf("Hello %s\n", name);
-    printf("You are %d years old\n", age);
-};
